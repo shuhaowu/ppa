@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ --with dkms
+
+override_dh_auto_clean:
+	echo "not cleaning anything now"
+
+override_dh_auto_build:
+	echo "not building now: module will be built by dkms"
+
+override_dh_auto_install:
+	echo "not performing make install now: it will be performed by dkms"

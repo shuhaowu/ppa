@@ -4,3 +4,6 @@
 [submodule "orig/code"]
 	path = orig/xournal
 	url = https://git.code.sf.net/p/xournal/code
+[submodule "orig/acpi-call"]
+	path = orig/acpi-call
+	url = https://github.com/teleshoes/acpi_call.git

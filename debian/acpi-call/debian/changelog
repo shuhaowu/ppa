@@ -1,0 +1,21 @@
+acpi-call (1.2.0+20171021+76ba2dd-0shuhao1) xenial; urgency=medium
+
+  * Updated source to 76ba2dd
+  * Updated upstream to https://github.com/teleshoes/acpi_call
+  * DKMS refers this to 1.2.0 so we do it as well
+
+ -- Shuhao Wu <shuhao@shuhaowu.com>  Sat, 21 Oct 2017 02:11:51 -0400
+
+acpi-call (1.1.0-0ubuntu0morgwai2) trusty; urgency=low
+
+  * Added patch to fix compilation on kernels >=3.17
+    (https://github.com/mkottman/acpi_call/issues/51)
+  * Some tiny changes to debian/copyright
+
+ -- Piotr Morgwai Kotarbinski (FOSS related) <launchpad@morgwai.pl>  Thu, 25 Aug 2016 02:57:46 +0700
+
+acpi-call (1.1.0-0ubuntu0morgwai1) saucy; urgency=low
+
+  * Initial release.
+
+ -- Piotr Morgwai Kotarbinski (launchpad related address) <launchpad@morgwai.pl>  Mon, 19 May 2014 20:17:06 +0700

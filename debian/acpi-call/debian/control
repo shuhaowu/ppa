@@ -1,0 +1,17 @@
+Source: acpi-call
+Section: kernel
+Priority: extra
+Maintainer: Shuhao Wu <shuhao@shuhaowu.com>
+Build-Depends: debhelper (>= 8.0.0), dkms (>= 2.1)
+Standards-Version: 3.9.4
+Homepage: https://github.com/teleshoes/acpi_call
+Vcs-Git: https://github.com/teleshoes/acpi_call.git
+
+Package: acpi-call-dkms
+Architecture: all
+Depends: dkms (>= 2.1), linux-headers, ${misc:Depends}
+Provides: acpi-call
+Description: Kernel module allowing to issue ACPI calls via a proc file.
+ A kernel module that enables you to call ACPI methods by writing
+ the method name followed by arguments to /proc/acpi/call.
+ It allows you to tamper with your system and should be used with caution.
