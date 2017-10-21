@@ -1,27 +1,14 @@
 #!/bin/sh
+
 set -e
-# summary of how this script can be called:
-#        * <postinst> `configure' <most-recently-configured-version>
-#        * <old-postinst> `abort-upgrade' <new version>
-#        * <conflictor's-postinst> `abort-remove' `in-favour' <package>
-#          <new-version>
-#        * <postinst> `abort-remove'
-#        * <deconfigured's-postinst> `abort-deconfigure' `in-favour'
-#          <failed-install-package> <version> `removing'
-#          <conflicting-package> <version>
-case "$1" in
-    configure)
-        #moduleVersion=$(echo $2 |cut -d - -f 1);
-        dkms install -m acpi_call -v 1.2.0;
-    ;;
 
-    abort-upgrade|abort-remove|abort-deconfigure)
-    ;;
-
-    *)
-        echo "postinst called with unknown argument \`$1'" >&2
-        exit 1
-    ;;
-esac
+# Expand the debhelper here which installs via dkms
 #DEBHELPER#
+
+case "$1" in
+  configure)
+    modprobe acpi_call
+  ;;
+esac
+
 exit 0
