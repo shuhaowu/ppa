@@ -2,6 +2,8 @@
 %:
 	dh $@ --with=systemd
 
+override_dh_auto_configure:
+	dh_auto_configure -- -DUSE_ATASMART=YES
 override_dh_auto_install:
 	dh_auto_install
 	rm $(CURDIR)/debian/thinkfan/usr/share/doc/thinkfan/thinkfan.conf.*
@@ -19,3 +21,4 @@ override_dh_systemd_enable:
 	# The user should enable it only after making sure the configuration is
 	# appropriate for his/her computer.
 	# This corresponds to START=no in /etc/default/thinkfan
+	dh_systemd_enable --no-enable

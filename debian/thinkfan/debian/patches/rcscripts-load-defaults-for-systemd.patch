@@ -1,0 +1,14 @@
+diff --git a/rcscripts/thinkfan.service b/rcscripts/thinkfan.service
+index 049b88b..e296abc 100644
+--- a/rcscripts/thinkfan.service
++++ b/rcscripts/thinkfan.service
+@@ -4,7 +4,8 @@ After=syslog.target
+ 
+ [Service]
+ Type=forking
+-ExecStart=/usr/sbin/thinkfan
++EnvironmentFile=-/etc/default/thinkfan
++ExecStart=/usr/sbin/thinkfan $DAEMON_ARGS
+ PIDFile=/var/run/thinkfan.pid
+ ExecReload=/bin/kill -HUP $MAINPID
+ 

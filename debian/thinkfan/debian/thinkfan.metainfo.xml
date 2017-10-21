@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <id>com.github.vmatare.thinkfan</id>
+  <metadata_license>BSD-3-Clause</metadata_license>
+  <name>thinkfan</name>
+  <summary>simple and lightweight fan control program</summary>
+  <description>
+    <p>
+      Some hardware has a kind of broken fan-control and lets the fan run
+      faster than really needed. Thinkfan will prevent this by controlling
+      the fan on its own (the fan speed for each temperature interval can be
+      adjusted in the configuration file).
+    </p>
+    <p>
+      Originally designed specifically for IBM/Lenovo Thinkpads,
+      it supports any kind of system via the sysfs hwmon interface.
+      It is designed to eat as little CPU power as possible.
+    </p>
+  </description>
+  <provides>
+    <modalias>lkmodule:thinkpad_acpi</modalias>
+  </provides>
+</component>

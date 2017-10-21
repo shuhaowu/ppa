@@ -1,0 +1,11 @@
+thinkfan (0.9.3-2) unstable; urgency=medium
+
+    On systems using SysV init, thinkfan is now enabled and disabled
+    using     update-rc.d and not via the obsolete START=(yes|no) flag
+    in /etc/default/thinkfan. During the upgrade the state from the
+    file is migrated automatically.
+
+    Please refer to README.Debian how to manually manage the service.
+
+ -- Evgeni Golov <evgeni@debian.org>  Sun, 12 Mar 2017 09:01:50 +0100
+

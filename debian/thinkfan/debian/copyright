@@ -1,10 +1,10 @@
-Format: http://dep.debian.net/deps/dep5/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: thinkfan
 Upstream-Contact: Victor Mataré <matare AT lih DOT rwth DASH aachen DOT de>
-Source: http://sourceforge.net/projects/thinkfan/files/
+Source: https://github.com/vmatare/thinkfan
 
 Files: *
-Copyright: 2008-2011, Victor Mataré <matare AT lih DOT rwth DASH aachen DOT de>
+Copyright: 2008-2016, Victor Mataré <matare AT lih DOT rwth DASH aachen DOT de>
 License: GPL-3
 
 Files: rcscripts/thinkfan.gentoo
@@ -12,7 +12,7 @@ Copyright: 1999-2008, Gentoo Foundation
 License: GPL-2
 
 Files: debian/*
-Copyright: 2009-2011, Evgeni Golov <evgeni@debian.org>
+Copyright: 2009-2016, Evgeni Golov <evgeni@debian.org>
 License: BSD-3-clause
 
 License: GPL-3

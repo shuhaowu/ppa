@@ -1,0 +1,7 @@
+# pre-deployment of a disabled service as dh_installinit is
+# not capable to do so for us.
+thinkfan: duplicate-updaterc.d-calls-in-postinst thinkfan
+
+# only called for upgrades from older versions to migrate
+# enabled/disabled state
+thinkfan: preinst-calls-updaterc.d thinkfan

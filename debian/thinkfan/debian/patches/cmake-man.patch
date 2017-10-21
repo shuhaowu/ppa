@@ -1,0 +1,11 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index c650e16..03ff96c 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -28,5 +28,5 @@ endif(USE_ATASMART)
+ install(TARGETS thinkfan DESTINATION sbin)
+ install(FILES NEWS COPYING README examples/thinkfan.conf.complex
+ 	examples/thinkfan.conf.simple DESTINATION share/doc/thinkfan)
+-install(FILES thinkfan.1 DESTINATION share/man/man1)
++install(FILES src/thinkfan.1 DESTINATION share/man/man1)
+ 
