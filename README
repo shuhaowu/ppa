@@ -1,0 +1,30 @@
+Included packages:
+
+- xournal: there is a 0 pressure at the end of the stroke bug in the ubuntu
+  build. This bug has been since fixed on master. See
+  http://sourceforge.net/p/xournal/bugs/136/. Since I didn't want to just
+  cherry-pick the commits, this is just the latest master build.
+  - The debian folder for this project comes from debian upstream.
+- thinkfan 0.9: thinkfan 0.9's official build on xenial (0.9.2, 0.9.3 should be
+  fine and is in at least artful) has some garbage output problem, this build
+  includes the patch for this bug. See
+  https://bugs.launchpad.net/ubuntu/+source/thinkfan/+bug/1494546 for more
+  details.
+  - The debian folder for this project comes from ubuntu upstream.
+
+This is released at https://launchpad.net/~shuhao/+archive/ubuntu/fixed.
+
+To update the code:
+
+- Ensure the computer has the GPG signing key.
+- cd into the project directory (project/<name>).
+- Update the source and check out the desired version.
+- cd into the debian folder for the project (debian/<name>).
+- dch -i
+- Fill out the versioning information and change log. MAKE SURE AUTHOR NAME AND EMAIL IS CORRECT.
+- git add && git commit
+
+To perform a release:
+
+- After the above and in the root directory of this repo.
+- ./release.sh <project>
