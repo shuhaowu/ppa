@@ -27,4 +27,4 @@ To update the code:
 To perform a release:
 
 - After the above and in the root directory of this repo.
-- ./release.sh <project>
+- ./release-to-ppa.sh <project>
