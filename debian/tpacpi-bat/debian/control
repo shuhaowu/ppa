@@ -1,0 +1,16 @@
+Source: tpacpi-bat
+Section: utils
+Priority: extra
+Maintainer: Shuhao Wu <shuhao@shuhaowu.com>
+Build-Depends: debhelper (>= 9), dh-systemd (>= 1.5)
+Standards-Version: 3.9.7
+Homepage: https://github.com/teleshoes/tpacpi-bat
+Vcs-Git: https://github.com/teleshoes/tpacpi-bat.git
+
+Package: tpacpi-bat
+Architecture: all
+Depends: perl, acpi-call, ${misc:Depends}
+Description: ThinkPad ACPI Battery Util.
+ Exposes ACPI interface for ThinkPad battery controls.
+ Allows one to set start and stop charge thresholds,
+ force discharge and inhibit charge.

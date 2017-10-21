@@ -7,3 +7,6 @@
 [submodule "orig/acpi-call"]
 	path = orig/acpi-call
 	url = https://github.com/teleshoes/acpi_call.git
+[submodule "orig/tpacpi-bat"]
+	path = orig/tpacpi-bat
+	url = https://github.com/teleshoes/tpacpi-bat
