@@ -1,0 +1,19 @@
+thinkfan for Debian
+-------------------
+
+WARNING!
+ thinkfan CAN kill your system and is thus disabled by default
+
+If you really want to enable thinkfan, adjust /etc/thinkfan.conf to your
+needs and set START=yes in /etc/default/thinkfan.
+
+If you are using systemd, use “systemctl enable thinkfan.service” — as is
+customary with systemd, thinkfan.service ignores /etc/default/thinkfan.
+
+Additionally, on ThinkPads, you need to load the thinkpad_acpi module with
+fan_control=1, or it will refuse to accept control from thinkfan.
+That's most easily done with a file /etc/modprobe.d/thinkfan.conf and the
+following entry in it:
+options thinkpad_acpi fan_control=1
+
+ -- Evgeni Golov <evgeni@debian.org>  Mon, 09 Nov 2009 11:53:11 +0100

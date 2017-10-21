@@ -1,0 +1,166 @@
+thinkfan (0.9.2+20151014+fd1c0969-0shuhao1) vivid; urgency=medium
+
+  * Updated to fd1c0969 at https://github.com/shuhaowu/thinkfan
+  * Fixed issue with thinkfan erroring because it is writing garbage
+
+ -- Shuhao Wu <shuhao@shuhaowu.com>  Wed, 14 Oct 2015 22:57:34 -0400
+
+thinkfan (0.9.2-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.9.2
+
+ -- Evgeni Golov <evgeni@debian.org>  Tue, 29 Apr 2014 07:54:46 +0200
+
+thinkfan (0.9.1-1) experimental; urgency=medium
+
+  [ Evgeni Golov ]
+  * Imported Upstream version 0.9.1
+    + Uses $MAINPID in the systemd unit. (Closes: #713876)
+  * Add B-D on cmake
+  * Rework packaging after the switch to cmake.
+  * use canonical git urls
+  * Standards-Version: 3.9.5
+  * patch CMakeFiles.txt to install stuff to expected locations
+
+  [ Michael Stapelberg ]
+  * use dh-systemd for proper systemd-related maintscripts (Closes: #713878)
+  * document how to use thinkfan with systemd (Closes: #728087)
+
+ -- Evgeni Golov <evgeni@debian.org>  Sun, 27 Apr 2014 00:22:49 +0200
+
+thinkfan (0.8.1-1) unstable; urgency=low
+
+  * Imported Upstream version 0.8.1
+    + Does not write "level X" to sysfs anymore.
+      Closes: #684315
+
+ -- Evgeni Golov <evgeni@debian.org>  Mon, 13 Aug 2012 07:09:37 +0200
+
+thinkfan (0.8.0-1) unstable; urgency=low
+
+  * Imported Upstream version 0.8.0
+  * do not override dh_auto_clean
+  * Standards-Version: 3.9.3
+  * use dh 9 for hardening flags
+  * switch to source format 3.0 (quilt)
+  * use CPPFLAGS in the Makefile
+  * do not use $(< ...) in the systemd file
+
+ -- Evgeni Golov <evgeni@debian.org>  Wed, 06 Jun 2012 21:36:00 +0200
+
+thinkfan (0.8~alpha2-1) experimental; urgency=low
+
+  [ Mika Pflüger ]
+  * New Upstream release.
+    + Adds complex rule format with individual limits for every
+      sensor.
+    + Levels can now be given as strings like "level auto" if
+      desired.
+  * debian/rules:
+    + Adapt file paths to new upstream version.
+  * Drop systemd service file from debian/, upstream ships it.
+
+  [ Evgeni Golov ]
+  * Upload to experimental.
+    Closes: #660293
+    Thanks: Mika Pflüger <debian@mikapflueger.de>
+
+ -- Evgeni Golov <evgeni@debian.org>  Sat, 18 Feb 2012 09:44:18 +0100
+
+thinkfan (0.7.3-1) unstable; urgency=low
+
+  * New upstream release.
+    + Don't cut buffer to length 8 in setfan_ibm().
+      Closes: #610722
+  * Update debian/copyright:
+    + Update years.
+    + thinkfan is now GPLv3 licensed.
+    + Update to latest dep5 spec.
+  * Standards-Version: 3.9.2
+  * Add systemd service file.
+    Thanks: Michael Stapelberg <michael+db20090501@stapelberg.de>
+    Closes: #635750
+
+ -- Evgeni Golov <evgeni@debian.org>  Sun, 09 Oct 2011 20:23:45 +0200
+
+thinkfan (0.7.1-2) unstable; urgency=high
+
+  * debian/control:
+    + Add missing Vcs-* fields for Git.
+    + Standards-Version: 3.9.1
+  * debian/rules:
+    + Install upstreams init-scripts. (Closes: #592321)
+
+ -- Evgeni Golov <evgeni@debian.org>  Tue, 10 Aug 2010 11:55:10 +0200
+
+thinkfan (0.7.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    + Fix typo (temerature → temperature).
+      Closes: #566382
+    + Update description according to upstream's README.
+    + Standards-Version: 3.9.0
+  * debian/copyright:
+    + Quote BSD-license, thanks lintian.
+
+ -- Evgeni Golov <evgeni@debian.org>  Thu, 15 Jul 2010 18:24:27 +0200
+
+thinkfan (0.7-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/thinkfan{1,manpages}:
+    + Use upstream's manpage instead of our own.
+  * debian/README.source:
+    + Remove README.source as upstream ships .tar.gz now.
+  * debian/control:
+    + Standards-Version: 3.8.4
+  * debian/copyright:
+    + Update upstream's copyright years.
+    + Update Gentoo init-script path.
+  * debian/thinkfan.{default,init}:
+    + Upstream ships our init-scripts, drop them from debian/.
+  * debian/thinkfan.examples:
+    + Ship upstream's example configs under /u/s/d/thinkfan/examples/.
+  * debian/source/format:
+    + Add debian/source/format telling it's still a 1.0 package,
+      thanks lintian.
+  * debian/thinkfan.docs:
+    + Include upstream's NEWS file.
+
+ -- Evgeni Golov <evgeni@debian.org>  Wed, 07 Apr 2010 19:52:26 +0200
+
+thinkfan (0.6.6-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/rules:
+    + Install thinkfan.conf.thinkpad as /etc/thinkfan.conf.
+    + Do not override build target, upstream's one is fine.
+  * debian/copyright:
+    + Update to DEP5 revision 135.
+    + Update my copyright years.
+  * debian/watch:
+    + Upstream started to use gzipped tar files, fix the link.
+
+ -- Evgeni Golov <evgeni@debian.org>  Sun, 03 Jan 2010 19:11:05 +0100
+
+thinkfan (0.6~rc1-1) unstable; urgency=low
+
+  * New upstream release
+    + Includes the "pulsing-fan workaround".
+      Closes: #546762 
+  * debian/README.Debian, debian/thinkfan.default:
+    + Describe necessity for fan_control=1 for thinkpad_acpi.
+      Closes: #547701
+  * debian/thinkfan.default:
+    + Let the user adjust DAEMON_ARGS, so he can pass own parameters.
+  * debian/thinkfan.1:
+    + Update the manpage to reflect the new -p parameter.
+
+ -- Evgeni Golov <evgeni@debian.org>  Mon, 09 Nov 2009 11:53:11 +0100
+
+thinkfan (0.5.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #537573)
+
+ -- Evgeni Golov <evgeni@debian.org>  Wed, 02 Sep 2009 14:12:49 +0200

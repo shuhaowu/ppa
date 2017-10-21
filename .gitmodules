@@ -1,0 +1,6 @@
+[submodule "orig/thinkfan"]
+	path = orig/thinkfan
+	url = https://github.com/vmatare/thinkfan.git
+[submodule "orig/code"]
+	path = orig/xournal
+	url = https://git.code.sf.net/p/xournal/code

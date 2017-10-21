@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+%:
+	dh $@ --with=systemd
+
+override_dh_auto_install:
+	dh_auto_install
+	rm $(CURDIR)/debian/thinkfan/usr/share/doc/thinkfan/thinkfan.conf.*
+	rm $(CURDIR)/debian/thinkfan/usr/share/doc/thinkfan/COPYING
+	install -D -m0644 examples/thinkfan.conf.simple $(CURDIR)/debian/thinkfan/etc/thinkfan.conf
+	install -D -m0755 rcscripts/thinkfan.init $(CURDIR)/debian/thinkfan/etc/init.d/thinkfan
+	install -D -m0644 rcscripts/thinkfan.default $(CURDIR)/debian/thinkfan/etc/default/thinkfan
+	install -D -m0644 rcscripts/thinkfan.service $(CURDIR)/debian/thinkfan/lib/systemd/system/thinkfan.service
+
+override_dh_installinit:
+	dh_installinit --onlyscripts
+
+override_dh_systemd_enable:
+	# Do not enable the file by default on purpose.
+	# The user should enable it only after making sure the configuration is
+	# appropriate for his/her computer.
+	# This corresponds to START=no in /etc/default/thinkfan
