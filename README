@@ -11,6 +11,10 @@ Included packages:
   https://bugs.launchpad.net/ubuntu/+source/thinkfan/+bug/1494546 for more
   details.
   - The debian folder for this project comes from ubuntu upstream.
+- acpi-call: For tpacpi-batt
+  - The debian folder comes from ppa:morgwai/tpbat, but heavily modified
+- tpacpi-batt: For setting battery charge thresholds on thinkpads.
+  - The debian folder comes from ppa:morgwai/tpbat, but heavily modified
 
 This is released at https://launchpad.net/~shuhao/+archive/ubuntu/fixed.
 
