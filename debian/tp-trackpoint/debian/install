@@ -1,0 +1,3 @@
+tp-trackpoint.path lib/systemd/system
+tp-trackpoint.service lib/systemd/system
+tp-trackpoint usr/bin

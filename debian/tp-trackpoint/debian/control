@@ -1,0 +1,16 @@
+Source: tp-trackpoint
+Section: misc
+Priority: extra
+Maintainer: Shuhao Wu <shuhao@shuhaowu.com>
+Build-Depends: debhelper (>= 10.0.0), dh-systemd (>= 1.5)
+Standards-Version: 3.9.7
+Homepage: https://github.com/shuhaowu/tp-trackpoint
+Vcs-Git: https://github.com/shuhaowu/tp-trackpoint.git
+
+Package: tp-trackpoint
+Architecture: all
+Depends: python3 (>= 3.4), ${misc:Depends}
+Provides: tp-trackpoint
+Description: Set trackpoint sensitivity for thinkpads.
+ Sets trackpoint sensitivity on startup based on a
+ configuration file.

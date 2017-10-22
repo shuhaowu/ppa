@@ -3,7 +3,7 @@
 project=$1
 
 if [ -z $project ]; then
-  >&2 echo "usage: ./build-deb.sh directory [ppa_id]"
+  >&2 echo "usage: ./build-deb.sh project"
   exit 1
 fi
 

@@ -10,3 +10,6 @@
 [submodule "orig/tpacpi-bat"]
 	path = orig/tpacpi-bat
 	url = https://github.com/teleshoes/tpacpi-bat
+[submodule "orig/tp-trackpoint"]
+	path = orig/tp-trackpoint
+	url = git@github.com:shuhaowu/tp-trackpoint.git

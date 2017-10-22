@@ -15,6 +15,7 @@ Included packages:
   - The debian folder comes from ppa:morgwai/tpbat, but heavily modified
 - tpacpi-batt: For setting battery charge thresholds on thinkpads.
   - The debian folder comes from ppa:morgwai/tpbat, but heavily modified
+- tp-trackpoint: For setting trackpoint sensitivity on startup
 
 This is released at https://launchpad.net/~shuhao/+archive/ubuntu/fixed.
 

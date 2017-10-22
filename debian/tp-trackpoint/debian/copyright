@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: tp-trackpoint
+Upstream-Contact: Shuhao Wu <shuhao@shuhaowu.com>
+Source: https://github.com/shuhaowu/tp-trackpoint
+
+Files: *
+Copyright: 2017 Shuhao Wu <shuhao@shuhaowu.com>
+License: GPL-3
+
+License: GPL-3
+ The complete text of the GNU General Public License version 3 can be
+ found on Debian systems in the '/usr/share/common-licenses/GPL-3' file.
