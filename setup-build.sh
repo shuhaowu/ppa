@@ -31,7 +31,7 @@ echo "Setting up build of $project_version"
 
 set -x
 
-rm -rf $project_build_dir
+rm -rf $project_build_dir/$project_version
 mkdir -p $project_build_dir/$project_version
 
 pushd $project_orig_dir >/dev/null
