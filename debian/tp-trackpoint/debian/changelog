@@ -1,3 +1,9 @@
+tp-trackpoint (1.0-1shuhao1) xenial; urgency=medium
+
+  * Fixed build on PPA
+
+ -- Shuhao Wu <shuhao@shuhaowu.com>  Sun, 22 Oct 2017 13:59:41 -0400
+
 tp-trackpoint (1.0-0shuhao1) xenial; urgency=medium
 
   * Initial release.
