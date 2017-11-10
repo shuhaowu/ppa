@@ -35,7 +35,13 @@ rm -rf $project_build_dir/$project_version
 mkdir -p $project_build_dir/$project_version
 
 pushd $project_orig_dir >/dev/null
-  git checkout-index -a -f --prefix="../../$project_build_dir/$project_version/"
+  if [ -f .git ]; then
+    git checkout-index -a -f --prefix="../../$project_build_dir/$project_version/"
+  else
+    echo "NOT GIT! COPYING..."
+    mkdir -p ../../$project_build_dir/$project_version/
+    cp -ar * ../../$project_build_dir/$project_version/
+  fi
 popd >/dev/null
 
 cp -ar $project_debian_dir $project_build_dir/$project_version
