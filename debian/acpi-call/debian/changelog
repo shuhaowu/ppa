@@ -1,3 +1,10 @@
+acpi-call (1.2.0+20171109+28c3c26-0shuhao1) xenial; urgency=medium
+
+  * Updated source to 28c3c26.
+  * Fixed issue where it does not build on artful.
+
+ -- Shuhao Wu <shuhao@shuhaowu.com>  Thu, 09 Nov 2017 23:27:21 -0500
+
 acpi-call (1.2.0+20171021+76ba2dd-0shuhao1) xenial; urgency=medium
 
   * Updated source to 76ba2dd
