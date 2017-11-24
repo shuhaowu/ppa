@@ -23,5 +23,5 @@ pushd $project_build_dir >/dev/null
   pushd $project_version >/dev/null
     debuild -S -sa
   popd >/dev/null
-  dput ppa:$ppa_id ${project}*.changes
+  dput ppa:$ppa_id ${project_version}*.changes
 popd >/dev/null
