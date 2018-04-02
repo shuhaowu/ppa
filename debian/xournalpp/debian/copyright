@@ -1,0 +1,13 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xournalpp
+Source: https://github.com/xournalpp/xournalpp
+License: GPL-2.0
+Copyright: See AUTHORS file in source
+
+Files: *
+Copyright: See AUTHORS file in source
+License: GPL-2.0
+
+Files: debian/*
+Copyright: 2017 Shuhao Wu
+Licence: GPL-2+

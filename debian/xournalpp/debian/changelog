@@ -1,0 +1,5 @@
+xournalpp (1.0.1+20171124+12d604c-0shuhao1) xenial; urgency=medium
+
+  * Initial port of xournalpp to a debian package.
+
+ -- Shuhao Wu <shuhao@shuhaowu.com>  Fri, 24 Nov 2017 00:59:06 -0500

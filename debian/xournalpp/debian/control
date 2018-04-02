@@ -1,0 +1,31 @@
+Source: xournalpp
+Section: x11
+Priority: optional
+Maintainer: Shuhao Wu <shuhao@shuhaowu.com>
+Build-Depends: debhelper (>= 9),
+               cmake,
+               libboost-all-dev,
+               libcppunit-dev,
+               dvipng,
+               texlive,
+               liblcms2-dev,
+               libopenjpeg-dev,
+               libjpeg-dev,
+               fontconfig,
+               librsvg2-dev,
+               libglade2-dev
+Standards-Version: 3.9.7
+Homepage: https://github.com/xournalpp/xournalpp
+Vcs-Git: https://github.com/xournalpp/xournalpp.git
+
+Package: xournalpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: xournal
+Description: Notetaking software designed around a tablet
+ Xournal++ is not Xournal! It is a ground-up rewrite of Xournal
+ in a different language (C++ instead of C). The purpose was to
+ create a more flexible application that significantly extends
+ the functionality of Xournal. At the moment, Xournal is very stable
+ software while Xournal++ is not. If you want stability, you might
+ be more interested in the original Xournal project.

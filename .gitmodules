@@ -13,3 +13,6 @@
 [submodule "orig/tp-trackpoint"]
 	path = orig/tp-trackpoint
 	url = git@github.com:shuhaowu/tp-trackpoint.git
+[submodule "orig/xournalpp"]
+	path = orig/xournalpp
+	url = https://github.com/xournalpp/xournalpp.git
