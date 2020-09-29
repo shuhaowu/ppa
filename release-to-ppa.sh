@@ -8,7 +8,7 @@ project=$1
 ppa_id=$2
 
 if [ -z $project ]; then
-  >&2 echo "usage: ./release-to-ppa.sh directory [ppa_id]"
+  >&2 echo "usage: ./release-to-ppa.sh project [ppa_id]"
   exit 1
 fi
 
