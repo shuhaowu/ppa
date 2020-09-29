@@ -1,3 +1,12 @@
+tp-trackpoint (1.2-0shuhao1) focal; urgency=medium
+
+  * tp-trackpoint now runs after resume from suspend.
+  * It will now take 5 seconds (default, change in /etc/default/tp-trackpoint)
+    before the settings are applied. This works around a permission issue when
+    the system just come out of resume.
+
+ -- Shuhao Wu <shuhao@shuhaowu.com>  Tue, 29 Sep 2020 18:47:42 -0400
+
 tp-trackpoint (1.0-1shuhao1) xenial; urgency=medium
 
   * Fixed build on PPA
