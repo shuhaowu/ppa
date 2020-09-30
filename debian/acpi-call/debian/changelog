@@ -1,3 +1,9 @@
+acpi-call (1.2.1+20200930+3a28aab-0shuhao2) focal; urgency=medium
+
+  * Updated kernel module version to 1.2.1.
+
+ -- Shuhao Wu <shuhao@shuhaowu.com>  Tue, 29 Sep 2020 20:37:36 -0400
+
 acpi-call (1.2.1+20200929+3a28aab-0shuhao1) focal; urgency=medium
 
   * Updated source to 3a28aab
