@@ -1,3 +1,9 @@
+tpacpi-bat (3.1+20200929+4959b52-0shuhao1) focal; urgency=medium
+
+  * Updated to 4959b52.
+
+ -- Shuhao Wu <shuhao@shuhaowu.com>  Tue, 29 Sep 2020 20:06:58 -0400
+
 tpacpi-bat (3.1+20171021+cb8822e-0shuhao1) xenial; urgency=medium
 
   * Updated to latest upstream release
@@ -7,7 +13,7 @@ tpacpi-bat (3.1+20171021+cb8822e-0shuhao1) xenial; urgency=medium
 
 tpacpi-bat (3.0-0ubuntu0morgwai1) trusty; urgency=medium
 
-  * New upstream release. 
+  * New upstream release.
 
  -- Piotr Morgwai Kotarbinski (FOSS related) <launchpad@morgwai.pl>  Thu, 25 Aug 2016 17:31:42 +0700
 
