@@ -1,3 +1,9 @@
+acpi-call (1.2.1+20200929+3a28aab-0shuhao1) focal; urgency=medium
+
+  * Updated source to 3a28aab
+
+ -- Shuhao Wu <shuhao@shuhaowu.com>  Tue, 29 Sep 2020 20:03:03 -0400
+
 acpi-call (1.2.0+20171109+28c3c26-0shuhao1) xenial; urgency=medium
 
   * Updated source to 28c3c26.
